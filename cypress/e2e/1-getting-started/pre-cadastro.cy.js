@@ -1,5 +1,4 @@
 /// <reference types="cypress" />
-var faker = require('faker')
 
 describe('Funcionalidade Pré Cadastro', () => {
 
@@ -10,7 +9,7 @@ describe('Funcionalidade Pré Cadastro', () => {
 
 
     it('Deve completar o pré cadastro com sucesso', () => {
-        cy.get('#reg_email').type(faker.internet.email())
+        cy.get('#reg_email').type('teste2023@teste.com')
         cy.get('#reg_password').type('teste@teste.com')
         cy.get(':nth-child(4) > .button').click()
 
